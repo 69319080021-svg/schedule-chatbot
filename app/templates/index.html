@@ -4,24 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ผู้ช่วยตารางสอนอาจารย์</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/chat-dark.css">
 </head>
-<body>
+<body class="chat-dark">
   <div class="app">
-    <header>
-      <h1>🎓 ผู้ช่วยตารางสอนอาจารย์</h1>
-      <p class="subtitle">แผนกเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคสัตหีบ</p>
+    <header class="hero">
+      <div class="hero-badge">🎓</div>
+      <div>
+        <h1>ผู้ช่วยตารางสอนอาจารย์</h1>
+        <p class="subtitle">แผนกเทคโนโลยีสารสนเทศ · วิทยาลัยเทคนิคสัตหีบ</p>
+      </div>
     </header>
 
     <div id="chat-window" class="chat-window">
       <div class="message bot">
         สวัสดีครับ ถามได้เลย เช่น "อาจารย์สจีวันจันทร์สอนคาบไหนบ้าง" หรือ "ห้อง COM404 วันอังคารมีใครสอนบ้าง"
       </div>
+      <div class="suggestions" id="suggestions">
+        <button type="button" class="chip">อาจารย์สจีวันนี้สอนกี่โมง</button>
+        <button type="button" class="chip">วันจันทร์มีใครสอนบ้าง</button>
+        <button type="button" class="chip">ห้อง COM404 วันอังคาร</button>
+      </div>
     </div>
 
     <form id="chat-form" class="chat-form">
       <input type="text" id="question-input" placeholder="พิมพ์คำถามที่นี่..." autocomplete="off" required>
-      <button type="submit">ส่ง</button>
+      <button type="submit" aria-label="ส่งคำถาม">➤</button>
     </form>
 
     <div class="admin-link"><a href="/admin/login">สำหรับแอดมิน</a></div>
