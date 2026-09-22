@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+data/_pending_extraction.json
+
+# ไม่จำเป็นสำหรับการ deploy เว็บแอป
+.agents/
+in chat/
+kaggle_pipeline/
+skills-lock.json
+*.docx

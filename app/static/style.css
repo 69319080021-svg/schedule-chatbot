@@ -1,0 +1,255 @@
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --border: #e0e2e7;
+  --text: #1f2430;
+  --text-muted: #6b7280;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --bot-bubble: #eef1f6;
+  --user-bubble: #2563eb;
+  --error: #dc2626;
+  --success: #16a34a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Sarabun", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+header {
+  text-align: center;
+  padding: 8px 0 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background: var(--bot-bubble);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: var(--user-bubble);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.message.error {
+  background: #fee2e2;
+  color: var(--error);
+}
+
+.message.loading {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.chat-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 15px;
+}
+
+.chat-form button {
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background: var(--primary-dark);
+}
+
+.admin-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.admin-link a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.admin-box {
+  max-width: 420px;
+  margin: 60px auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.admin-box.wide {
+  max-width: 960px;
+}
+
+.admin-box h2 {
+  margin-top: 0;
+}
+
+.admin-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-box input[type="password"],
+.admin-box input[type="file"] {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 15px;
+}
+
+.admin-box button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.admin-box button:hover {
+  background: var(--primary-dark);
+}
+
+.admin-box a {
+  color: var(--primary);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.error {
+  color: var(--error);
+  font-size: 14px;
+}
+
+.success {
+  color: var(--success);
+  font-size: 14px;
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.review-layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-layout form {
+  flex: 1;
+  min-width: 320px;
+}
+
+.review-layout .preview {
+  flex: 1;
+  min-width: 320px;
+}
+
+#data-json {
+  width: 100%;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-secondary {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.preview table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.preview th,
+.preview td {
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.preview th {
+  background: var(--bot-bubble);
+}

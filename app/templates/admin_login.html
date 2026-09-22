@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เข้าสู่ระบบแอดมิน</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="admin-box">
+    <h2>เข้าสู่ระบบแอดมิน</h2>
+    {% if error %}<p class="error">{{ error }}</p>{% endif %}
+    <form method="post" action="/admin/login">
+      <input type="password" name="password" placeholder="รหัสผ่าน" required autofocus>
+      <button type="submit">เข้าสู่ระบบ</button>
+    </form>
+    <p><a href="/">&larr; กลับหน้าถาม-ตอบ</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>อัปโหลดตารางสอน</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="admin-box">
+    <h2>อัปโหลดตารางสอน (PDF)</h2>
+    {% if saved %}<p class="success">บันทึกข้อมูลเรียบร้อยแล้ว</p>{% endif %}
+    {% if error %}<p class="error">{{ error }}</p>{% endif %}
+    <form method="post" action="/admin/upload" enctype="multipart/form-data">
+      <input type="file" name="file" accept="application/pdf" required>
+      <button type="submit">อัปโหลดและสกัดข้อมูล</button>
+    </form>
+    <p class="hint">ระบบจะใช้ Gemini อ่านไฟล์ PDF และแปลงเป็นข้อมูลให้อัตโนมัติ (อาจใช้เวลาสักครู่) จากนั้นจะให้ตรวจสอบก่อนบันทึกจริง</p>
+    <p><a href="/admin/logout">ออกจากระบบ</a> &nbsp;|&nbsp; <a href="/">กลับหน้าถาม-ตอบ</a></p>
+  </div>
+</body>
+</html>

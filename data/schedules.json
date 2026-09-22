@@ -1,0 +1,486 @@
+[
+  {
+    "name": "นางสจี พรหมมาศ",
+    "qualification": "คอ.ม.",
+    "department": "เทคโนโลยีสารสนเทศ",
+    "school": "วิทยาลัยเทคนิคสัตหีบ",
+    "semester": "1/2569",
+    "special_duty": "หัวหน้างานประกันคุณภาพ",
+    "courses": [
+      {
+        "code": "31900-1003",
+        "name": "การสร้างสื่อดิจิทัล",
+        "theory_hours": 1,
+        "practice_hours": 4,
+        "credits": 3,
+        "total_hours": 14
+      },
+      {
+        "code": "31908-2005",
+        "name": "การเขียนโปรแกรมเชิงโครงสร้าง",
+        "theory_hours": 1,
+        "practice_hours": 4,
+        "credits": 3,
+        "total_hours": 9
+      },
+      {
+        "code": "31901-2009",
+        "name": "การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่",
+        "theory_hours": 1,
+        "practice_hours": 4,
+        "credits": 3,
+        "total_hours": 5
+      },
+      {
+        "code": "20000-2001",
+        "name": "กิจกรรมลูกเสือวิสามัญ 1",
+        "theory_hours": 0,
+        "practice_hours": 2,
+        "credits": 0,
+        "total_hours": 2
+      }
+    ],
+    "schedule": [
+      {
+        "day": "จันทร์",
+        "start_time": "09:00",
+        "end_time": "12:00",
+        "periods": "2-4",
+        "type": "ป",
+        "course_code": "31901-2009",
+        "course_name": "การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่",
+        "location": "สถานประกอบการ",
+        "group": "สท.5/1-2",
+        "student_count": 44
+      },
+      {
+        "day": "จันทร์",
+        "start_time": "14:00",
+        "end_time": "16:00",
+        "periods": "7-8",
+        "type": "ป",
+        "course_code": "31900-1003",
+        "course_name": "การสร้างสื่อดิจิทัล",
+        "location": "สถานประกอบการ",
+        "group": "คภ.5/1-2",
+        "student_count": 44
+      },
+      {
+        "day": "จันทร์",
+        "start_time": "18:00",
+        "end_time": "19:00",
+        "periods": "11",
+        "type": "ท",
+        "course_code": "31901-2009",
+        "course_name": "การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่",
+        "location": "ออนไลน์",
+        "group": "สท.5/1-2",
+        "student_count": 44
+      },
+      {
+        "day": "อังคาร",
+        "start_time": "09:00",
+        "end_time": "11:00",
+        "periods": "2-3",
+        "type": "ป",
+        "course_code": "31900-1003",
+        "course_name": "การสร้างสื่อดิจิทัล",
+        "location": "COM404",
+        "group": "สท.4/1",
+        "student_count": 20
+      },
+      {
+        "day": "อังคาร",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "periods": "5-6",
+        "type": "ป",
+        "course_code": "31900-1003",
+        "course_name": "การสร้างสื่อดิจิทัล",
+        "location": "COM404",
+        "group": "สท.4/1",
+        "student_count": 20
+      },
+      {
+        "day": "อังคาร",
+        "start_time": "18:00",
+        "end_time": "19:00",
+        "periods": "11",
+        "type": "ท",
+        "course_code": "31900-1003",
+        "course_name": "การสร้างสื่อดิจิทัล",
+        "location": "ออนไลน์",
+        "group": "คภ.5/1-2",
+        "student_count": 44
+      },
+      {
+        "day": "พุธ",
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "periods": "1",
+        "type": "ท",
+        "course_code": "31900-1003",
+        "course_name": "การสร้างสื่อดิจิทัล",
+        "location": "COM404",
+        "group": "สท.4/1-2",
+        "student_count": 39
+      },
+      {
+        "day": "พุธ",
+        "start_time": "09:00",
+        "end_time": "11:00",
+        "periods": "2-3",
+        "type": "ป",
+        "course_code": "31900-1003",
+        "course_name": "การสร้างสื่อดิจิทัล",
+        "location": "COM404",
+        "group": "สท.4/2",
+        "student_count": 19
+      },
+      {
+        "day": "พุธ",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "periods": "5-6",
+        "type": "ป",
+        "course_code": "31900-1003",
+        "course_name": "การสร้างสื่อดิจิทัล",
+        "location": "COM404",
+        "group": "สท.4/2",
+        "student_count": 19
+      },
+      {
+        "day": "พุธ",
+        "start_time": "14:00",
+        "end_time": "16:00",
+        "periods": "7-8",
+        "type": "ป",
+        "course_code": "20000-2001",
+        "course_name": "กิจกรรมลูกเสือวิสามัญ 1",
+        "location": "สนามลูกเสือเนตรนารี",
+        "group": "สท.1/1-2",
+        "student_count": 40
+      },
+      {
+        "day": "พฤหัสบดี",
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "periods": "1",
+        "type": "ท",
+        "course_code": "31908-2005",
+        "course_name": "การเขียนโปรแกรมเชิงโครงสร้าง",
+        "location": "COM404",
+        "group": "คภ.4/1-2",
+        "student_count": 35
+      },
+      {
+        "day": "พฤหัสบดี",
+        "start_time": "09:00",
+        "end_time": "11:00",
+        "periods": "2-3",
+        "type": "ป",
+        "course_code": "31908-2005",
+        "course_name": "การเขียนโปรแกรมเชิงโครงสร้าง",
+        "location": "COM404",
+        "group": "คภ.4/1",
+        "student_count": 20
+      },
+      {
+        "day": "พฤหัสบดี",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "periods": "5-6",
+        "type": "ป",
+        "course_code": "31908-2005",
+        "course_name": "การเขียนโปรแกรมเชิงโครงสร้าง",
+        "location": "COM404",
+        "group": "คภ.4/1",
+        "student_count": 20
+      },
+      {
+        "day": "ศุกร์",
+        "start_time": "09:00",
+        "end_time": "11:00",
+        "periods": "2-3",
+        "type": "ป",
+        "course_code": "31908-2005",
+        "course_name": "การเขียนโปรแกรมเชิงโครงสร้าง",
+        "location": "COM404",
+        "group": "คภ.4/2",
+        "student_count": 15
+      },
+      {
+        "day": "ศุกร์",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "periods": "5-6",
+        "type": "ป",
+        "course_code": "31908-2005",
+        "course_name": "การเขียนโปรแกรมเชิงโครงสร้าง",
+        "location": "COM404",
+        "group": "คภ.4/2",
+        "student_count": 15
+      }
+    ]
+  },
+  {
+    "name": "นายไมตรี มาโพธิ์",
+    "qualification": "ครุศาสตร์อุตสาหกรรมบัณฑิต",
+    "department": "เทคโนโลยีสารสนเทศ",
+    "school": "วิทยาลัยเทคนิคสัตหีบ",
+    "semester": "1/2569",
+    "special_duty": "ผู้ช่วยหัวหน้างานจัดการเรียนการสอน",
+    "courses": [
+      {
+        "code": "31901-2007",
+        "name": "เทคโนโลยีการจัดการฐานข้อมูล",
+        "theory_hours": 1,
+        "practice_hours": 4,
+        "credits": 3,
+        "total_hours": 9
+      },
+      {
+        "code": "31901-1002",
+        "name": "การจัดการข้อมูลขนาดใหญ่เบื้องต้น",
+        "theory_hours": 1,
+        "practice_hours": 2,
+        "credits": 2,
+        "total_hours": 10
+      },
+      {
+        "code": "31901-2012",
+        "name": "การวิเคราะห์และนำเสนอข้อมูล",
+        "theory_hours": 1,
+        "practice_hours": 4,
+        "credits": 3,
+        "total_hours": 5
+      },
+      {
+        "code": "21901-2014",
+        "name": "ระบบปฏิบัติการคอมพิวเตอร์เบื้องต้น",
+        "theory_hours": 1,
+        "practice_hours": 4,
+        "credits": 3,
+        "total_hours": 9
+      }
+    ],
+    "schedule": [
+      {
+        "day": "จันทร์",
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "periods": "1",
+        "type": "ท",
+        "course_code": "31901-2007",
+        "course_name": "เทคโนโลยีการจัดการฐานข้อมูล",
+        "location": "COM602",
+        "group": "สท.4/1-2",
+        "student_count": 39
+      },
+      {
+        "day": "จันทร์",
+        "start_time": "09:00",
+        "end_time": "11:00",
+        "periods": "2-3",
+        "type": "ป",
+        "course_code": "31901-2007",
+        "course_name": "เทคโนโลยีการจัดการฐานข้อมูล",
+        "location": "COM602",
+        "group": "สท.4/2",
+        "student_count": 19
+      },
+      {
+        "day": "จันทร์",
+        "start_time": "12:00",
+        "end_time": "13:00",
+        "periods": "5",
+        "type": "ป",
+        "course_code": "31901-2007",
+        "course_name": "เทคโนโลยีการจัดการฐานข้อมูล",
+        "location": "COM602",
+        "group": "สท.4/2",
+        "student_count": 19
+      },
+      {
+        "day": "จันทร์",
+        "start_time": "15:00",
+        "end_time": "17:00",
+        "periods": "8-9",
+        "type": "ป",
+        "course_code": "31901-2012",
+        "course_name": "การวิเคราะห์และนำเสนอข้อมูล",
+        "location": "สถานประกอบการ",
+        "group": "สท.5/1-2",
+        "student_count": 44
+      },
+      {
+        "day": "อังคาร",
+        "start_time": "12:00",
+        "end_time": "13:00",
+        "periods": "5",
+        "type": "ป",
+        "course_code": "21901-2014",
+        "course_name": "ระบบปฏิบัติการคอมพิวเตอร์เบื้องต้น",
+        "location": "COM403",
+        "group": "สท.3/3",
+        "student_count": 18
+      },
+      {
+        "day": "อังคาร",
+        "start_time": "15:00",
+        "end_time": "17:00",
+        "periods": "8-9",
+        "type": "ป",
+        "course_code": "31901-1002",
+        "course_name": "การจัดการข้อมูลขนาดใหญ่เบื้องต้น",
+        "location": "COM404",
+        "group": "สท.4/2",
+        "student_count": 19
+      },
+      {
+        "day": "พุธ",
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "periods": "1",
+        "type": "ท",
+        "course_code": "21901-2014",
+        "course_name": "ระบบปฏิบัติการคอมพิวเตอร์เบื้องต้น",
+        "location": "COM403",
+        "group": "สท.3/3-4",
+        "student_count": 35
+      },
+      {
+        "day": "พุธ",
+        "start_time": "09:00",
+        "end_time": "11:00",
+        "periods": "2-3",
+        "type": "ป",
+        "course_code": "31901-2007",
+        "course_name": "เทคโนโลยีการจัดการฐานข้อมูล",
+        "location": "COM403",
+        "group": "สท.4/1",
+        "student_count": 20
+      },
+      {
+        "day": "พุธ",
+        "start_time": "13:00",
+        "end_time": "14:00",
+        "periods": "6",
+        "type": "ป",
+        "course_code": "31901-2007",
+        "course_name": "เทคโนโลยีการจัดการฐานข้อมูล",
+        "location": "COM403",
+        "group": "สท.4/1",
+        "student_count": 20
+      },
+      {
+        "day": "พุธ",
+        "start_time": "16:00",
+        "end_time": "18:00",
+        "periods": "9-10",
+        "type": "ป",
+        "course_code": "31901-1002",
+        "course_name": "การจัดการข้อมูลขนาดใหญ่เบื้องต้น",
+        "location": "COM603",
+        "group": "ศก.4/1",
+        "student_count": 20
+      },
+      {
+        "day": "พฤหัสบดี",
+        "start_time": "09:00",
+        "end_time": "11:00",
+        "periods": "2-3",
+        "type": "ป",
+        "course_code": "21901-2014",
+        "course_name": "ระบบปฏิบัติการคอมพิวเตอร์เบื้องต้น",
+        "location": "COM301",
+        "group": "สท.3/4",
+        "student_count": 17
+      },
+      {
+        "day": "พฤหัสบดี",
+        "start_time": "12:00",
+        "end_time": "13:00",
+        "periods": "5",
+        "type": "ท",
+        "course_code": "31901-1002",
+        "course_name": "การจัดการข้อมูลขนาดใหญ่เบื้องต้น",
+        "location": "COM602",
+        "group": "สท.4/1-2",
+        "student_count": 39
+      },
+      {
+        "day": "พฤหัสบดี",
+        "start_time": "13:00",
+        "end_time": "15:00",
+        "periods": "6-7",
+        "type": "ป",
+        "course_code": "31901-1002",
+        "course_name": "การจัดการข้อมูลขนาดใหญ่เบื้องต้น",
+        "location": "COM602",
+        "group": "สท.4/1",
+        "student_count": 20
+      },
+      {
+        "day": "พฤหัสบดี",
+        "start_time": "15:00",
+        "end_time": "16:00",
+        "periods": "8",
+        "type": "ท",
+        "course_code": "31901-1002",
+        "course_name": "การจัดการข้อมูลขนาดใหญ่เบื้องต้น",
+        "location": "COM603",
+        "group": "ศก.4/1-2",
+        "student_count": 35
+      },
+      {
+        "day": "พฤหัสบดี",
+        "start_time": "16:00",
+        "end_time": "18:00",
+        "periods": "9-10",
+        "type": "ป",
+        "course_code": "31901-1002",
+        "course_name": "การจัดการข้อมูลขนาดใหญ่เบื้องต้น",
+        "location": "COM603",
+        "group": "ศก.4/2",
+        "student_count": 15
+      },
+      {
+        "day": "ศุกร์",
+        "start_time": "11:00",
+        "end_time": "12:00",
+        "periods": "4",
+        "type": "ป",
+        "course_code": "21901-2014",
+        "course_name": "ระบบปฏิบัติการคอมพิวเตอร์เบื้องต้น",
+        "location": "COM603",
+        "group": "สท.3/3",
+        "student_count": 18
+      },
+      {
+        "day": "ศุกร์",
+        "start_time": "12:00",
+        "end_time": "13:00",
+        "periods": "5",
+        "type": "ป",
+        "course_code": "21901-2014",
+        "course_name": "ระบบปฏิบัติการคอมพิวเตอร์เบื้องต้น",
+        "location": "COM603",
+        "group": "สท.3/4",
+        "student_count": 17
+      },
+      {
+        "day": "ศุกร์",
+        "start_time": "18:00",
+        "end_time": "20:00",
+        "periods": "11-12",
+        "type": "ท",
+        "course_code": "31901-2012",
+        "course_name": "การวิเคราะห์และนำเสนอข้อมูล",
+        "location": "ออนไลน์",
+        "group": "สท.5/1-2",
+        "student_count": 44
+      }
+    ]
+  }
+]
