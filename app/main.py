@@ -37,8 +37,16 @@ async def chat_api(request: Request):
 
     try:
         answer = gemini_client.answer_question(question, schedules)
+    except gemini_client.QuotaExceededError:
+        return JSONResponse(
+            {"error": "ขออภัยครับ วันนี้มีผู้ใช้งานเยอะจนครบโควตาการตอบคำถามแล้ว กรุณาลองใหม่พรุ่งนี้ครับ"},
+            status_code=503,
+        )
     except Exception as e:
-        return JSONResponse({"error": f"เกิดข้อผิดพลาด: {e}"}, status_code=500)
+        print(f"[chat_api] unexpected error: {e!r}")
+        return JSONResponse(
+            {"error": "เกิดข้อผิดพลาดในระบบ กรุณาลองใหม่อีกครั้งครับ"}, status_code=500
+        )
 
     return {"answer": answer}
 

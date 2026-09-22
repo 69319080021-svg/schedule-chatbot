@@ -13,6 +13,10 @@ RETRYABLE_CODES = {429, 503}
 MAX_RETRIES = 3
 
 
+class QuotaExceededError(Exception):
+    """โควตาฟรีรายวันของ Gemini API หมด — retry ใหม่ไม่ช่วยเพราะโควตาจะรีเซ็ตทีละวันเท่านั้น"""
+
+
 def get_client() -> genai.Client:
     global _client
     if _client is None:
@@ -25,6 +29,9 @@ def _with_retries(call: Callable[[], Any]) -> Any:
         try:
             return call()
         except errors.APIError as e:
+            if e.code == 429 and "PerDay" in str(e):
+                # โควตารายวันหมด ลองใหม่ในไม่กี่วินาทีไม่มีประโยชน์ ต้องแจ้งผู้ใช้ทันที
+                raise QuotaExceededError(str(e)) from e
             if e.code not in RETRYABLE_CODES or attempt == MAX_RETRIES:
                 raise
             time.sleep(2**attempt)
@@ -130,7 +137,7 @@ QUERY_SYSTEM_TEMPLATE = (
 
 def answer_question(question: str, schedules: list[dict[str, Any]]) -> str:
     client = get_client()
-    data_json = json.dumps(schedules, ensure_ascii=False, indent=2)
+    data_json = json.dumps(schedules, ensure_ascii=False, separators=(",", ":"))
     system_text = QUERY_SYSTEM_TEMPLATE.format(data=data_json)
     response = _with_retries(lambda: client.models.generate_content(
         model=QUERY_MODEL,
