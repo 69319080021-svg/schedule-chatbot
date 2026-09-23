@@ -28,6 +28,7 @@ def chat_page(request: Request):
 async def chat_api(request: Request):
     body = await request.json()
     question = (body.get("question") or "").strip()
+    history = body.get("history") or []
     if not question:
         return JSONResponse({"error": "กรุณาพิมพ์คำถาม"}, status_code=400)
 
@@ -36,7 +37,7 @@ async def chat_api(request: Request):
         return {"answer": "ยังไม่มีข้อมูลตารางสอนในระบบ กรุณาให้แอดมินอัปโหลดข้อมูลก่อนครับ"}
 
     try:
-        answer = gemini_client.answer_question(question, schedules)
+        answer = gemini_client.answer_question(question, schedules, history)
     except gemini_client.QuotaExceededError:
         return JSONResponse(
             {"error": "ขออภัยครับ วันนี้มีผู้ใช้งานเยอะจนครบโควตาการตอบคำถามแล้ว กรุณาลองใหม่พรุ่งนี้ครับ"},

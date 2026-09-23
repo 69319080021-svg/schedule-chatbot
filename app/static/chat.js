@@ -2,6 +2,7 @@ const form = document.getElementById("chat-form");
 const input = document.getElementById("question-input");
 const chatWindow = document.getElementById("chat-window");
 const suggestions = document.getElementById("suggestions");
+const conversationHistory = [];
 
 function addMessage(text, cssClass) {
   const div = document.createElement("div");
@@ -144,7 +145,7 @@ async function sendQuestion(question) {
     const res = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question }),
+      body: JSON.stringify({ question, history: conversationHistory }),
     });
     const data = await res.json();
     loadingMsg.remove();
@@ -152,6 +153,8 @@ async function sendQuestion(question) {
       addMessage(data.error, "bot error");
     } else {
       addBotMessage(data.answer);
+      conversationHistory.push({ role: "user", text: question });
+      conversationHistory.push({ role: "bot", text: data.answer });
     }
   } catch (err) {
     loadingMsg.remove();

@@ -135,13 +135,29 @@ QUERY_SYSTEM_TEMPLATE = (
 )
 
 
-def answer_question(question: str, schedules: list[dict[str, Any]]) -> str:
+MAX_HISTORY_TURNS = 10
+
+
+def answer_question(
+    question: str,
+    schedules: list[dict[str, Any]],
+    history: list[dict[str, str]] | None = None,
+) -> str:
     client = get_client()
     data_json = json.dumps(schedules, ensure_ascii=False, separators=(",", ":"))
     system_text = QUERY_SYSTEM_TEMPLATE.format(data=data_json)
+
+    contents: list[types.Content] = []
+    for turn in (history or [])[-MAX_HISTORY_TURNS * 2:]:
+        role = "model" if turn.get("role") == "bot" else "user"
+        text = turn.get("text", "")
+        if text:
+            contents.append(types.Content(role=role, parts=[types.Part.from_text(text=text)]))
+    contents.append(types.Content(role="user", parts=[types.Part.from_text(text=question)]))
+
     response = _with_retries(lambda: client.models.generate_content(
         model=QUERY_MODEL,
-        contents=question,
+        contents=contents,
         config=types.GenerateContentConfig(system_instruction=system_text),
     ))
     return response.text
